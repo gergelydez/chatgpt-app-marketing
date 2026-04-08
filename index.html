@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatGPT App Marketing</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0b1020;
+        --card: #111a33;
+        --text: #e8edff;
+        --muted: #a9b4d0;
+        --accent: #7ea4ff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        background: radial-gradient(circle at 20% 10%, #162248, var(--bg));
+        color: var(--text);
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      main {
+        width: min(760px, 92vw);
+        background: color-mix(in hsl, var(--card) 92%, black 8%);
+        border: 1px solid #24335f;
+        border-radius: 16px;
+        padding: 2rem;
+        box-shadow: 0 20px 45px rgb(0 0 0 / 35%);
+      }
+
+      h1 {
+        margin: 0 0 0.75rem;
+        font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+      }
+
+      p {
+        margin: 0.5rem 0;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      .badge {
+        display: inline-block;
+        margin-bottom: 1rem;
+        background: rgb(126 164 255 / 18%);
+        color: var(--accent);
+        border: 1px solid rgb(126 164 255 / 45%);
+        border-radius: 999px;
+        padding: 0.3rem 0.7rem;
+        font-size: 0.9rem;
+      }
+
+      a {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <span class="badge">Vercel deployment OK</span>
+      <h1>ChatGPT App Marketing</h1>
+      <p>
+        Dacă vezi această pagină, deploy-ul funcționează corect pe
+        <strong>Vercel</strong>.
+      </p>
+      <p>
+        Dacă înainte apărea un ecran gol, cauza era lipsa fișierului de entry
+        point (`index.html`) în repository.
+      </p>
+      <p>
+        Poți face redeploy din Vercel (sau push nou în branch) și link-ul
+        <a href="https://chatgpt-app-marketing.vercel.app/">chatgpt-app-marketing.vercel.app</a>
+        ar trebui să afișeze imediat această pagină.
+      </p>
+    </main>
+  </body>
+</html>
